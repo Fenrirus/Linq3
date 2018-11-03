@@ -11,10 +11,10 @@ namespace Linq3
 
         static void Main(string[] args)
         {
-            Dictionary<int, decimal> values = Purchase.GetPrices();
+            Dictionary<int, decimal> values = Price.GetPrices();
             var priceGroups =
              from pair in values
-             group pair.Key by Purchase.EvaluatePrice(pair.Value)
+             group pair.Key by Price.EvaluatePrice(pair.Value)
              into priceGroup
              orderby priceGroup.Key descending
              select priceGroup;
@@ -34,7 +34,7 @@ namespace Linq3
                         stringKey = "tanie";
                         break;
                 }
-                Console.Write($"Znalazłem {group.Count()} {stringKey}");
+                Console.Write($"Znalazłem {group.Count()} {stringKey} ");
                 foreach (var issue in group)
                 {
                     Console.Write(issue.ToString() + " ");

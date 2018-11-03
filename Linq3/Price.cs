@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Linq3
 {
-    public class Purchase
+    public class Price
     {
         public static Dictionary<int, decimal> GetPrices()
         {
