@@ -8,9 +8,6 @@ namespace Linq3
 {
     public class Purchase
     {
-        public int Issue { get; set; }
-        public decimal Price { get; set; }
-
         public static Dictionary<int, decimal> GetPrices()
         {
             return new Dictionary<int, decimal> {

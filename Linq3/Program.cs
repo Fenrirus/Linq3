@@ -34,7 +34,7 @@ namespace Linq3
                         stringKey = "tanie";
                         break;
                 }
-                Console.Write($"Znalazłem {group.Count()} {stringKey} ");
+                Console.Write($"Znalazłem {group.Count()} {stringKey}");
                 foreach (var issue in group)
                 {
                     Console.Write(issue.ToString() + " ");
